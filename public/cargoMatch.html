@@ -1,0 +1,218 @@
+<html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CargoMatch - Conectando Transportadoras e Fornecedores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/themes/light.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/shoelace-autoloader.js"></script>
+    <style>
+        :root {
+            --primary-color: #0052CC;
+            --secondary-color: #000000;
+        }
+        .gradient-bg {
+            background: linear-gradient(90deg, #072758 0%, #01062c 100%);
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.fixed{position:fixed}.bottom-6{bottom:1.5rem}.right-6{right:1.5rem}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-16{margin-bottom:4rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-10{margin-top:2.5rem}.mt-4{margin-top:1rem}.mt-8{margin-top:2rem}.flex{display:flex}.grid{display:grid}.h-16{height:4rem}.h-20{height:5rem}.h-6{height:1.5rem}.w-16{width:4rem}.w-20{width:5rem}.w-6{width:1.5rem}.w-full{width:100%}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.border{border-width:1px}.border-t{border-top-width:1px}.border-gray-600{--tw-border-opacity:1;border-color:rgb(75 85 99 / var(--tw-border-opacity, 1))}.bg-\[\#0052CC\]{--tw-bg-opacity:1;background-color:rgb(0 82 204 / var(--tw-bg-opacity, 1))}.bg-\[\#172B4D\]{--tw-bg-opacity:1;background-color:rgb(23 43 77 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-green-500{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.p-4{padding:1rem}.p-6{padding:1.5rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.pb-20{padding-bottom:5rem}.pt-32{padding-top:8rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.font-sans{font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}.text-2xl{font-size:1.5rem;line-height:2rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.text-\[\#0052CC\]{--tw-text-opacity:1;color:rgb(0 82 204 / var(--tw-text-opacity, 1))}.text-\[\#172B4D\]{--tw-text-opacity:1;color:rgb(23 43 77 / var(--tw-text-opacity, 1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:bg-green-600:hover{--tw-bg-opacity:1;background-color:rgb(22 163 74 / var(--tw-bg-opacity, 1))}.hover\:text-\[\#0052CC\]:hover{--tw-text-opacity:1;color:rgb(0 82 204 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}@media (min-width: 768px){.md\:mt-0{margin-top:0px}.md\:w-1\/2{width:50%}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}}</style></head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-[#0052CC]">CargoMatch</div>
+            <div class="flex items-center gap-6">
+                <a href="#features" class="text-gray-700 hover:text-[#0052CC]">Recursos</a>
+                <a href="#how-it-works" class="text-gray-700 hover:text-[#0052CC]">Como Funciona</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-[#0052CC]">Depoimentos</a>
+                <sl-button variant="primary" class="bg-[#0052CC]" size="medium" data-optional="" data-valid="">Cadastre-se Grátis</sl-button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="gradient-bg pt-32 pb-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-white">
+                <h1 class="text-5xl font-bold mb-6">Conectamos Cargas a Transportadores</h1>
+                <p class="text-xl mb-8">Sua plataforma definitiva para encontrar fretes ou transportadores. Ideal para vans, fiorinos e pequenos caminhões.</p>
+                <div class="flex gap-4">
+                    <button style="background-color: #0052CC; color: white; border-radius: 5px; padding: 8px 16px; border: none; cursor: pointer; transition: background-color 0.3s;" 
+                    onmouseover="this.style.backgroundColor='#0041A3'" 
+                    onmouseout="this.style.backgroundColor='#0052CC'">
+             Sou Transportador
+         <button>
+         
+         <button style="background-color: #0052CC; color: white; border-radius: 5px; padding: 8px 16px; border: none; cursor: pointer;"
+            onmouseover="this.style.backgroundColor='#0041A3'" 
+                    onmouseout="this.style.backgroundColor='#0052CC'"> 
+            Tenho Carga
+         <button>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-10 md:mt-0">
+                <img src=" https://www.hivecloud.com.br/wp-content/uploads/2016/08/08-Voce%CC%82-acompanha-corretamente-a-performance-da-sua-transportadora.png" alt="Delivery Van" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-[#172B4D] mb-16">Por que escolher o CargoMatch?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <div class="p-6 border rounded-lg shadow-lg">
+                    <img src="https://cargox.com.br/wp-content/uploads/2021/01/Definir-rota-logistica.jpg" class="w-46 h-46 mb-4 border rounded-lg" alt="Ícone">
+                    <h3 class="text-xl font-bold text-[#172B4D] mb-3">Encontre Cargas Facilmente</h3>
+                    <p class="text-gray-600">Acesse centenas de oportunidades de fretes diariamente, filtradas para seu veículo.</p>
+                </div>
+                <div class="p-6 border rounded-lg shadow-lg">
+                    <img src="https://nfe.io/blog/app/uploads/2019/10/mercado-meios-pagamento-brasil.jpg" class="w-46 h-46 mb-4 border rounded-lg" alt="Ícone">
+                    <h3 class="text-xl font-bold text-[#172B4D] mb-3">Pagamento Seguro</h3>
+                    <p class="text-gray-600">Sistema de pagamento protegido e garantido para todas as transações.</p>
+                </div>
+                <div class="p-6 border rounded-lg shadow-lg">
+                    <img src="https://aliolico.com.br/wp-content/uploads/2017/09/sledzenie-przesylek.jpg" class="w-46 h-46 mb-4 border rounded-lg" alt="Ícone">
+                    <h3 class="text-xl font-bold text-[#172B4D] mb-3">Rastreamento em Tempo Real</h3>
+                    <p class="text-gray-600">Acompanhe suas cargas em tempo real e mantenha seus clientes informados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-[#172B4D] mb-16">Como Funciona</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-[#0052CC] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">1</div>
+                    <h3 class="text-xl font-bold text-[#172B4D] mb-3">Cadastre-se</h3>
+                    <p class="text-gray-600">Crie sua conta gratuitamente como transportador ou fornecedor</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-[#0052CC] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">2</div>
+                    <h3 class="text-xl font-bold text-[#172B4D] mb-3">Publique ou Encontre</h3>
+                    <p class="text-gray-600">Publique suas cargas ou encontre fretes disponíveis</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-[#0052CC] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">3</div>
+                    <h3 class="text-xl font-bold text-[#172B4D] mb-3">Negocie</h3>
+                    <p class="text-gray-600">Faça propostas e negocie diretamente pela plataforma</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-[#0052CC] rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">4</div>
+                    <h3 class="text-xl font-bold text-[#172B4D] mb-3">Realize o Frete</h3>
+                    <p class="text-gray-600">Conclua o serviço e receba seu pagamento com segurança</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-[#172B4D] mb-16">O que dizem nossos usuários</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <sl-card class="p-6">
+                    <div class="flex flex-col items-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzwVSSCVasA4PHwZPoZqRXgvBEMB7lvRmlFw&s" alt="User" class="w-24 h-24 rounded-full mb-4">
+                        <p class="text-gray-600 text-center mb-4">"Encontro fretes diariamente para minha van. A plataforma facilitou muito meu trabalho!"</p>
+                        <strong class="text-[#172B4D]">João Silva</strong>
+                        <span class="text-sm text-gray-500">Transportador Autônomo</span>
+                    </div>
+                </sl-card>
+                <sl-card class="p-6">
+                    <div class="flex flex-col items-center">
+                        <img src=" https://img.freepik.com/fotos-premium/retrato-selfie-de-jovem-mulher-latina-sorrindo-feliz-olhando-para-a-camera-no-cais-sobre-o-rio_434738-2371.jpg?semt=ais_hybrid " alt="User" class="w-24 h-24 rounded-full mb-4">
+                        <p class="text-gray-600 text-center mb-4">"Consigo transportadores confiáveis para minhas cargas rapidamente. Excelente serviço!"</p>
+                        <strong class="text-[#172B4D]">Maria Santos</strong>
+                        <span class="text-sm text-gray-500">Empresa de E-commerce</span>
+                    </div>
+                </sl-card>
+                <sl-card class="p-6">
+                    <div class="flex flex-col items-center">
+                        <img src=" https://www3.al.sp.gov.br/legis/biografia/fotos/20230315-170849-id=1649-GRD.jpeg" alt="User" class="w-24 h-24 rounded-full mb-4">
+                        <p class="text-gray-600 text-center mb-4">"O sistema de pagamento seguro me dá tranquilidade para realizar os fretes."</p>
+                        <strong class="text-[#172B4D]">Carlos Oliveira</strong>
+                        <span class="text-sm text-gray-500">Transportadora</span>
+                    </div>
+                </sl-card>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="gradient-bg py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-white mb-8">Comece a usar o CargoMatch hoje mesmo</h2>
+            <p class="text-xl text-white mb-8">Cadastre-se gratuitamente e encontre as melhores oportunidades</p>
+            <button style="background-color: #1e6ce2; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background-color 0.3s;" 
+            onmouseover="this.style.backgroundColor='#0041A3'" 
+            onmouseout="this.style.backgroundColor='#0052CC'">
+        Começar Agora
+    </button>        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#172B4D] text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">CargoMatch</h3>
+                    <p class="text-gray-300">Conectando transportadores e fornecedores de forma eficiente.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Links Úteis</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Sobre Nós</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Como Funciona</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Preços</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Suporte</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Central de Ajuda</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">FAQ</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Política de Privacidade</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contate-nos</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300">biforcedigital@gmail.com
+                        </li>
+                        <li class="text-gray-300">(31) 99708-8385</li>
+                    </ul>
+                    <div class="flex gap-4 mt-4">
+                        <button style="background-color: #0052CC; color: white; border: none; padding: 8px 12px; font-size: 14px; cursor: pointer;">
+                            Facebook
+                          </button>
+                          <button style="background-color: #0052CC; color: white; border: none; padding: 8px 12px; font-size: 14px; cursor: pointer;">
+                            LinkedIn
+                          </button>
+                          <button style="background-color: #0052CC; color: white; border: none; padding: 8px 12px; font-size: 14px; cursor: pointer;">
+                            Instagram
+                          </button>
+                          
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+                <p class="text-gray-300">© 2024 CargoMatch. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/553197088385" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white rounded-full p-4 shadow-lg hover:bg-green-600 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+        </svg>
+    </a>
+
+    <script type="module">
+        import { gsap } from 'https://cdn.jsdelivr.net/npm/gsap</script></body></html>
